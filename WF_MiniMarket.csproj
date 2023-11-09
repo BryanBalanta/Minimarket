@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52DB18D1-DE9C-41B5-A371-7919D70DA22D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WF_MiniMarket</RootNamespace>
+    <AssemblyName>WF_MiniMarket</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarCategoria.Designer.cs">
+      <DependentUpon>FrmActualizarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarCliente.Designer.cs">
+      <DependentUpon>FrmActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarEmpleado.Designer.cs">
+      <DependentUpon>FrmActualizarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarFactura.Designer.cs">
+      <DependentUpon>FrmActualizarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarMiniMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarMiniMarket.Designer.cs">
+      <DependentUpon>FrmActualizarMiniMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarOrdenDeCompra.Designer.cs">
+      <DependentUpon>FrmActualizarOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarProducto.Designer.cs">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarProveedor.Designer.cs">
+      <DependentUpon>FrmActualizarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarCategoria.Designer.cs">
+      <DependentUpon>FrmConsultarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarCliente.Designer.cs">
+      <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarProveedor.Designer.cs">
+      <DependentUpon>FrmConsultarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCategoria.Designer.cs">
+      <DependentUpon>FrmRegistrarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCliente.Designer.cs">
+      <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarEmpleado.Designer.cs">
+      <DependentUpon>FrmRegistrarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarFactura.Designer.cs">
+      <DependentUpon>FrmRegistrarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarMiniMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarMiniMarket.Designer.cs">
+      <DependentUpon>FrmRegistrarMiniMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarOrdenDeCompra.Designer.cs">
+      <DependentUpon>FrmRegistrarOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarProducto.Designer.cs">
+      <DependentUpon>FrmRegistrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarProveedor.Designer.cs">
+      <DependentUpon>FrmRegistrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarCategoria.resx">
+      <DependentUpon>FrmActualizarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarCliente.resx">
+      <DependentUpon>FrmActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarEmpleado.resx">
+      <DependentUpon>FrmActualizarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarFactura.resx">
+      <DependentUpon>FrmActualizarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarMiniMarket.resx">
+      <DependentUpon>FrmActualizarMiniMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarOrdenDeCompra.resx">
+      <DependentUpon>FrmActualizarOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarProducto.resx">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarProveedor.resx">
+      <DependentUpon>FrmActualizarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarCategoria.resx">
+      <DependentUpon>FrmConsultarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarCliente.resx">
+      <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarProveedor.resx">
+      <DependentUpon>FrmConsultarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCategoria.resx">
+      <DependentUpon>FrmRegistrarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCliente.resx">
+      <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarEmpleado.resx">
+      <DependentUpon>FrmRegistrarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarFactura.resx">
+      <DependentUpon>FrmRegistrarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarMiniMarket.resx">
+      <DependentUpon>FrmRegistrarMiniMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarOrdenDeCompra.resx">
+      <DependentUpon>FrmRegistrarOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarProducto.resx">
+      <DependentUpon>FrmRegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarProveedor.resx">
+      <DependentUpon>FrmRegistrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CL_Capa_Entidades\CL_Capa_Entidades.csproj">
+      <Project>{414187E1-1545-4E97-8806-E232F2E8AA43}</Project>
+      <Name>CL_Capa_Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="CL_Capa_Negocio\CL_Capa_Negocio.csproj">
+      <Project>{949AF4BD-78E6-481D-9286-F2E300DA69FE}</Project>
+      <Name>CL_Capa_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
